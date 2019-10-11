@@ -7,8 +7,33 @@
 main {
     position: relative;
 }
+
+#london{
+    background-image: url("../images/londra.jpg");
+}
+
+#paris{
+    background-image: url("../images/parigi.jpg");
+}
+
+#tokyo{
+    background-image: url("../images/tokyo.jpg");
+}
+
 .modernSection{
-    background-image: url('https://www.hok.com/wp-content/uploads/2018/01/LaGuardia-Airport-New-Terminal-B-Dusk-Rendering-1900.jpg');
+    margin: 15px;
     height: 100vh;
     width: 100vw;
+    background-color: lightGray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nameOfCity {
+    text-align: center;
+    height: 60px;
+    position: relative;
+    top: calc((100% - 60px) / 2);
 }
