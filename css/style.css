@@ -4,14 +4,11 @@
     box-sizing: border-box;
 }
 
-main {
-    position: relative;
-}
+
 
 #london{
     background-image: url("../images/londra.jpg");
 }
-
 #paris{
     background-image: url("../images/parigi.jpg");
 }
@@ -19,21 +16,37 @@ main {
 #tokyo{
     background-image: url("../images/tokyo.jpg");
 }
-
-.modernSection{
-    margin: 15px;
+.margine {
+    margin: 10px;
     height: 100vh;
     width: 100vw;
+}
+
+.modernSection{
+
+    margin: 10px;
+    height: 100%;
+    width: 100%;
     background-color: lightGray;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    position: relative;
 }
 
 .nameOfCity {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    height: 60px;
-    position: relative;
-    top: calc((100% - 60px) / 2);
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
 }
